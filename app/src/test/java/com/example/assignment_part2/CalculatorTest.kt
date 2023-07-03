@@ -34,4 +34,18 @@ class CalculatorTest {
     val result = calculator.getValue()
     assertEquals(300.5, result, DELTA)
   }
+
+  @Test
+  fun testSubtractFunction1() {
+    calculator.subtract(50.0, 30.0)
+    val result = calculator.getValue()
+    assertEquals(20.0, result, DELTA)
+  }
+
+  @Test
+  fun testSubtractFunction2() {
+    calculator.subtract(10.0, 20.0)
+    val result = calculator.getValue()
+    assertEquals(-10.0, result, DELTA)
+  }
 }
