@@ -1,5 +1,7 @@
 package com.example.assignment_part2
 
+import java.lang.NumberFormatException
+
 class Calculator: Operator {
   private var value: Double = 0.0
 
@@ -24,6 +26,9 @@ class Calculator: Operator {
   }
 
   override fun divide(num1: Double, num2: Double) {
-    TODO("Not yet implemented")
+    if (num2 == 0.0) {
+      throw NumberFormatException("The denominator cannot be zero.")
+    }
+    this.setValue(num1 / num2)
   }
 }
