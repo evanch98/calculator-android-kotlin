@@ -12,7 +12,7 @@ class Calculator: Operator {
   }
 
   override fun add(num1: Double, num2: Double) {
-    TODO("Not yet implemented")
+    this.setValue(num1 + num2)
   }
 
   override fun subtract(num1: Double, num2: Double) {
