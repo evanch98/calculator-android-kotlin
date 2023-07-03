@@ -20,4 +20,18 @@ class CalculatorTest {
     val result = calculator.getValue()
     assertEquals(0.0, result, DELTA)
   }
+
+  @Test
+  fun testAddFunction1() {
+    calculator.add(1.0, 1.0)
+    val result = calculator.getValue()
+    assertEquals(2.0, result, DELTA)
+  }
+
+  @Test
+  fun testAddFunction2() {
+    calculator.add(100.5, 200.0)
+    val result = calculator.getValue()
+    assertEquals(300.5, result, DELTA)
+  }
 }
