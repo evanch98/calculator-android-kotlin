@@ -11,19 +11,19 @@ class Calculator: Operator {
     return this.value
   }
 
-  override fun add(num1: Double, num2: Double): Double {
+  override fun add(num1: Double, num2: Double) {
     TODO("Not yet implemented")
   }
 
-  override fun subtract(num1: Double, num2: Double): Double {
+  override fun subtract(num1: Double, num2: Double) {
     TODO("Not yet implemented")
   }
 
-  override fun multiply(num1: Double, num2: Double): Double {
+  override fun multiply(num1: Double, num2: Double) {
     TODO("Not yet implemented")
   }
 
-  override fun divide(num1: Double, num2: Double): Double {
+  override fun divide(num1: Double, num2: Double) {
     TODO("Not yet implemented")
   }
 }
