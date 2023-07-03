@@ -48,4 +48,18 @@ class CalculatorTest {
     val result = calculator.getValue()
     assertEquals(-10.0, result, DELTA)
   }
+
+  @Test
+  fun testMultiplyFunction1() {
+    calculator.multiply(20.0, 20.0)
+    val result = calculator.getValue()
+    assertEquals(400.0, result, DELTA)
+  }
+
+  @Test
+  fun testMultiplyFunction2() {
+    calculator.multiply(12.5, 30.0)
+    val result = calculator.getValue()
+    assertEquals(375.0, result, DELTA)
+  }
 }
