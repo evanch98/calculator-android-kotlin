@@ -62,4 +62,16 @@ class CalculatorTest {
     val result = calculator.getValue()
     assertEquals(375.0, result, DELTA)
   }
+
+  @Test
+  fun testDivideFunction1() {
+    calculator.divide(100.0, 2.0)
+    val result = calculator.getValue()
+    assertEquals(50.0, result, DELTA)
+  }
+
+  @Test(expected = NumberFormatException::class)
+  fun testDivideFunction2() {
+    calculator.divide(100.0, 0.0)
+  }
 }
